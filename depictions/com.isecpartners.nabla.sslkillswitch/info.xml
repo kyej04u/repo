@@ -12,7 +12,7 @@
 	</dependencies>
 	<shortDescription>Blackbox tool to disable SSL certificate validation</shortDescription>
 	<descriptionlist>
-		<description></description>
+		<description>Blackbox tool to disable SSL certificate validation</description>
 	</descriptionlist>
 	<changelog>
 		<change>Surpport iOS7.0</change>
