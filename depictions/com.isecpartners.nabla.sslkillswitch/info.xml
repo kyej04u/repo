@@ -1,0 +1,20 @@
+<package>
+	<id>com.isecpartners.nabla.sslkillswitch</id>
+	<name>iOS SSL Kill Switch</name>
+	<version>0.6-1</version>
+	<compatibility>
+		<firmware>
+			<miniOS>6.0</miniOS>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>mobilesubstrate</package>
+	</dependencies>
+	<shortDescription>Blackbox tool to disable SSL certificate validation</shortDescription>
+	<descriptionlist>
+		<description></description>
+	</descriptionlist>
+	<changelog>
+		<change>Surpport iOS7.0</change>
+	</changelog>
+</package>
