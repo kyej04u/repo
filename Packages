@@ -5,10 +5,10 @@ Maintainer: kyej04u
 Depends: mobilesubstrate, firmware (>= 4.0), firmware (<< 7.0)
 Architecture: iphoneos-arm
 Filename: ./debs/com.kyej04u.pushalertsuppression_1.0.0_iphoneos-arm.deb
-Size: 5808
-MD5sum: 3e9ec93d5d4444aaada1aeb2b05629e4
-Description: 隱藏 iPhone 未正確啟用造成的「連接iTunes以接收"推播通知"」提示， 支援iOS 4-6
- Hide the "Connect to iTunes to Use Push Notifications" prompt caused by an iPhone that is not properly activated. Supports iOS 4-6.
+Size: 5686
+MD5sum: c6aaecc933f92acbcbcc2705565dc04e
+Description: Hide the "Connect to iTunes to Use Push Notifications" prompt caused by an iPhone that is not properly activated. Supports iOS 4-6.
+Depiction: https://kyej04u.github.io/repo/depictions/com.kyej04u.pushalertsuppression/
 Name: PushAlertSuppression
 Author: kyej04u
 
