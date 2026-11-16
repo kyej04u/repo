@@ -1,1 +1,12 @@
-
+Package: com.kyej04u.pushalertsuppression
+Version: 1.0.0
+Section: Tweaks
+Maintainer: kyej04u
+Depends: mobilesubstrate, firmware (>= 4.0), firmware (<< 7.0)
+Architecture: iphoneos-arm
+Filename: ./debs/com.kyej04u.pushalertsuppression_1.0.0_iphoneos-arm.deb
+Size: 5738
+MD5sum: 7dbd3990177a995d4ea58bb5ac8a8b80
+Description: Suppress the "Connect to iTunes to Use Push Notifications" alert (SBRemoteNotificationNeedIdentityAlert) on iOS 4-6. Only that one alert is blocked; all other alerts are shown as normal. Push itself is not fixed, only the popup is hidden.
+Name: PushAlertSuppression
+Author: kyej04u
