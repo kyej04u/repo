@@ -38,3 +38,17 @@ Description: Show a finer time-of-day period in the iOS 6 status bar, like iPadO
 Depiction: https://kyej04u.github.io/repo/depictions/com.huang.timeperiodstatusbar/
 Name: TimePeriodStatusBar
 Author: Huang
+
+Package: com.kyej04u.appinstaller
+Version: 1.0.5
+Section: Utilities
+Maintainer: kyej04u
+Depends: firmware (>= 3.0), firmware (<< 7.0)
+Architecture: iphoneos-arm
+Filename: ./debs/com.kyej04u.appinstaller_1.0.5_iphoneos-arm.deb
+Size: 45624
+MD5sum: 280792fa4294d06da1ccb24b3dfa23ce
+Description: Install unsigned .ipa files on iOS 3-6 with a tap. Browse for .ipa files or open them from iFile. Unsigned IPAs need AppSync installed (old per-version build for iOS 3/4); the app itself does not bypass signatures.
+Depiction: https://kyej04u.github.io/repo/depictions/com.kyej04u.appinstaller/
+Name: APP Installer
+Author: kyej04u
