@@ -22,6 +22,7 @@ Filename: ./debs/com.kyej04u.nosimalert_1.0.0_iphoneos-arm.deb
 Size: 7098
 MD5sum: f66d77859835522c2094208685d009e1
 Description: Suppress the "No SIM Card Installed" alert (SBSIMLockAlertItem) on iOS 3-6. Only the no-SIM alert is blocked; SIM PIN/PUK and other SIM alerts are shown as normal.
+Depiction: https://kyej04u.github.io/repo/depictions/com.kyej04u.nosimalert/
 Name: NoSIMAlert
 Author: kyej04u
 
