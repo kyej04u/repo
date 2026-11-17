@@ -1,37 +1,50 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>TimePeriodStatusBar</title>
-<style>
-* { box-sizing: border-box; }
-body { font-family: -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif; margin: 0; padding: 16px; color: #222; background: #fff; word-wrap: break-word; overflow-wrap: break-word; }
-h1 { font-size: 20px; margin: 0 0 4px 0; }
-.version { color: #888; font-size: 13px; margin: 0 0 16px 0; }
-h2 { font-size: 15px; margin: 20px 0 6px 0; border-bottom: 1px solid #ddd; padding-bottom: 4px; }
-p { font-size: 15px; line-height: 1.6; margin: 0 0 10px 0; word-wrap: break-word; overflow-wrap: break-word; }
-.note { color: #666; font-size: 13px; }
-table { border-collapse: collapse; font-size: 15px; margin: 0 0 10px 0; max-width: 100%; }
-td { padding: 3px 12px 3px 0; }
-</style>
+<html><head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <title>TimePeriodStatusBar</title>
+    <style>
+        @import url(https://cydia.saurik.com/cytyle/style-3163da6b7950852a03d31ea77735f4e1d2ba6699.css);
+        @import url(http://cydia.saurik.com/cytyle/style-3163da6b7950852a03d31ea77735f4e1d2ba6699.css);
+    </style>
+    <meta name="viewport" content="initial-scale=1.0,width=device-width">
 </head>
-<body>
-<h1>TimePeriodStatusBar</h1>
-<p class="version">Version 1.0.6 &middot; iOS 6.0&ndash;6.1.x &middot; Tweaks</p>
-<h2>說明</h2>
-<p>在 iOS 6 狀態列顯示更細的時段，像 iPadOS 16+ 一樣：午夜 / 凌晨 / 清晨 / 上午 / 中午 / 下午 / 傍晚 / 晚上，例如「上午 3:07」→「凌晨 3:07」。只在 12 小時制、中文語系時啟用；英文 AM/PM 不動。在 App 裡面也一樣會顯示。</p>
-<table>
-<tr><td>0:00&ndash;0:59</td><td>午夜</td></tr>
-<tr><td>1:00&ndash;4:59</td><td>凌晨</td></tr>
-<tr><td>5:00&ndash;7:59</td><td>清晨</td></tr>
-<tr><td>8:00&ndash;10:59</td><td>上午</td></tr>
-<tr><td>11:00&ndash;12:59</td><td>中午</td></tr>
-<tr><td>13:00&ndash;16:59</td><td>下午</td></tr>
-<tr><td>17:00&ndash;18:59</td><td>傍晚</td></tr>
-<tr><td>19:00&ndash;23:59</td><td>晚上</td></tr>
-</table>
-<h2>Description</h2>
-<p>Show a finer time-of-day period in the iOS 6 status bar, like iPadOS 16+. Only active in 12-hour time, Chinese locale only; English AM/PM is left unchanged. Also applies inside apps (injects into UIKit processes, not SpringBoard only).</p>
-</body>
-</html>
+<body class="pinstripe">
+    <panel>
+        <fieldset>
+            <div>
+                <div>
+                    <strong>TimePeriodStatusBar</strong><br>
+                    <span style="font-size: small">Version 1.0.6 &middot; iOS 6.0&ndash;6.1.x &middot; Tweaks</span>
+                </div>
+            </div>
+        </fieldset>
+        <label>說明</label>
+        <fieldset>
+            <div>
+                <div>
+                    在 iOS 6 狀態列顯示更細的時段，像 iPadOS 16+ 一樣：午夜 / 凌晨 / 清晨 / 上午 / 中午 / 下午 / 傍晚 / 晚上，例如「上午 3:07」→「凌晨 3:07」。只在 12 小時制、中文語系時啟用；英文 AM/PM 不動。在 App 裡面也一樣會顯示。
+                </div>
+            </div>
+        </fieldset>
+        <label>時段對照</label>
+        <fieldset>
+            <div><div>0:00&ndash;0:59　午夜</div></div>
+            <div><div>1:00&ndash;4:59　凌晨</div></div>
+            <div><div>5:00&ndash;7:59　清晨</div></div>
+            <div><div>8:00&ndash;10:59　上午</div></div>
+            <div><div>11:00&ndash;12:59　中午</div></div>
+            <div><div>13:00&ndash;16:59　下午</div></div>
+            <div><div>17:00&ndash;18:59　傍晚</div></div>
+            <div><div>19:00&ndash;23:59　晚上</div></div>
+        </fieldset>
+        <label>Description</label>
+        <fieldset>
+            <div>
+                <div>
+                    Show a finer time-of-day period in the iOS 6 status bar, like iPadOS 16+. Only active in 12-hour time, Chinese locale only; English AM/PM is left unchanged. Also applies inside apps (injects into UIKit processes, not SpringBoard only).
+                </div>
+            </div>
+        </fieldset>
+    </panel>
+</body></html>
