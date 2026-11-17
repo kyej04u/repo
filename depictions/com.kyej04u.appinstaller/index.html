@@ -3,19 +3,37 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="UTF-8">
     <title>APP Installer</title>
-    <style>
-        @import url(https://cydia.saurik.com/cytyle/style-3163da6b7950852a03d31ea77735f4e1d2ba6699.css);
-        @import url(http://cydia.saurik.com/cytyle/style-3163da6b7950852a03d31ea77735f4e1d2ba6699.css);
-    </style>
+<style>
+@import url(https://cydia.saurik.com/cytyle/style-3163da6b7950852a03d31ea77735f4e1d2ba6699.css);
+@import url(http://cydia.saurik.com/cytyle/style-3163da6b7950852a03d31ea77735f4e1d2ba6699.css);
+</style>
+<style>
+/* iOS 4-6 style nav bar + icons (overrides cytyle where needed) */
+body{margin:0;}
+.navbar{position:relative;height:44px;background:-webkit-gradient(linear,left top,left bottom,from(#8aa6cd),to(#4e73a7));background:linear-gradient(to bottom,#8aa6cd,#4e73a7);border-bottom:1px solid #2e4a6b;-webkit-box-shadow:0 1px 3px rgba(0,0,0,0.35);box-shadow:0 1px 3px rgba(0,0,0,0.35);text-align:center;}
+.navtitle{display:block;margin:0 65px;color:#fff;font-size:18px;font-weight:bold;line-height:44px;text-shadow:0 -1px 0 rgba(0,0,0,0.45);font-family:Helvetica,Arial,sans-serif;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:center;}
+.backbtn{position:absolute;left:12px;top:7px;height:30px;line-height:30px;padding:0 10px 0 8px;color:#fff;font-size:13px;font-weight:bold;text-decoration:none;text-shadow:0 -1px 0 rgba(0,0,0,0.45);font-family:Helvetica,Arial,sans-serif;background:-webkit-gradient(linear,left top,left bottom,from(#7ba1d4),to(#4a6da3));background:linear-gradient(to bottom,#7ba1d4,#4a6da3);border:1px solid #2c4a6e;-webkit-border-radius:5px;border-radius:5px;-webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,0.35),0 1px 1px rgba(0,0,0,0.3);box-shadow:inset 0 1px 0 rgba(255,255,255,0.35),0 1px 1px rgba(0,0,0,0.3);}
+.backbtn:before{content:"";position:absolute;top:7px;left:-7px;width:15px;height:15px;background:-webkit-gradient(linear,left top,left bottom,from(#6b96cc),to(#4a6da3));background:linear-gradient(to bottom,#6b96cc,#4a6da3);border-left:1px solid #2c4a6e;border-bottom:1px solid #2c4a6e;-webkit-transform:rotate(45deg);transform:rotate(45deg);}
+/* app icons: iOS rounded rect + thin shadow */
+.appicon{-webkit-border-radius:10px;border-radius:10px;-webkit-box-shadow:0 1px 3px rgba(0,0,0,0.45);box-shadow:0 1px 3px rgba(0,0,0,0.45);}
+.pkgicon{float:left;width:59px;height:59px;margin:1px 10px 1px 0;}
+.pkgtext{overflow:hidden;}
+.addicon{vertical-align:middle;width:40px;height:40px;margin-right:10px;}
+.repoicon{float:left;width:57px;height:57px;margin:1px 10px 1px 0;}
+</style>
     <meta name="viewport" content="initial-scale=1.0,width=device-width">
 </head>
 <body class="pinstripe">
+    <div class="navbar"><a class="backbtn" href="../../">主頁</a><span class="navtitle">APP Installer</span></div>
     <panel>
         <fieldset>
             <div>
                 <div>
-                    <strong>APP Installer</strong><br>
-                    <span style="font-size: small">Version 1.0.6 &middot; iOS 3&ndash;6 &middot; Utilities</span>
+                    <img class="appicon pkgicon" src="../../icons/appinstaller.png" width="59" height="59">
+                    <div class="pkgtext">
+                        <strong>APP Installer</strong><br>
+                        <span style="font-size: small">Version 1.0.6 &middot; iOS 3&ndash;6 &middot; Utilities</span>
+                    </div>
                 </div>
             </div>
         </fieldset>
