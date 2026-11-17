@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TimePeriodStatusBar</title>
+<style>
+body { font-family: -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif; margin: 0; padding: 16px; color: #222; background: #fff; }
+h1 { font-size: 20px; margin: 0 0 4px 0; }
+.version { color: #888; font-size: 13px; margin: 0 0 16px 0; }
+h2 { font-size: 15px; margin: 20px 0 6px 0; border-bottom: 1px solid #ddd; padding-bottom: 4px; }
+p { font-size: 15px; line-height: 1.6; margin: 0 0 10px 0; }
+.note { color: #666; font-size: 13px; }
+table { border-collapse: collapse; font-size: 15px; margin: 0 0 10px 0; }
+td { padding: 3px 12px 3px 0; }
+</style>
+</head>
+<body>
+<h1>TimePeriodStatusBar</h1>
+<p class="version">Version 1.0.5 &middot; iOS 6.0&ndash;6.1.x &middot; Tweaks</p>
+<h2>說明</h2>
+<p>在 iOS 6 狀態列顯示更細的時段，像 iPadOS 16+ 一樣：午夜 / 凌晨 / 清晨 / 上午 / 中午 / 下午 / 傍晚 / 晚上，例如「上午 3:07」→「凌晨 3:07」。只在 12 小時制、中文語系時啟用；英文 AM/PM 不動。</p>
+<table>
+<tr><td>0:00&ndash;0:59</td><td>午夜</td></tr>
+<tr><td>1:00&ndash;4:59</td><td>凌晨</td></tr>
+<tr><td>5:00&ndash;7:59</td><td>清晨</td></tr>
+<tr><td>8:00&ndash;10:59</td><td>上午</td></tr>
+<tr><td>11:00&ndash;12:59</td><td>中午</td></tr>
+<tr><td>13:00&ndash;16:59</td><td>下午</td></tr>
+<tr><td>17:00&ndash;18:59</td><td>傍晚</td></tr>
+<tr><td>19:00&ndash;23:59</td><td>晚上</td></tr>
+</table>
+<p class="note">這是 debug 版本，會寫 log 到 /var/mobile/TimePeriodStatusBar.log、/tmp/TimePeriodStatusBar.log 和 /var/log/TimePeriodStatusBar.log。</p>
+<h2>Description</h2>
+<p>Show a finer time-of-day period in the iOS 6 status bar, like iPadOS 16+. Only active in 12-hour time, Chinese locale only; English AM/PM is left unchanged. v1.0.5: also applies inside apps (injects into UIKit processes, not SpringBoard only). DEBUG build: no longer links CydiaSubstrate (uses ObjC runtime swizzling instead, so it loads on old iOS 6 Substrate too); writes a log to /var/mobile/TimePeriodStatusBar.log, /tmp/TimePeriodStatusBar.log and /var/log/TimePeriodStatusBar.log (detailed logs only in SpringBoard; other processes log one load line).</p>
+</body>
+</html>
