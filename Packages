@@ -24,3 +24,17 @@ MD5sum: f66d77859835522c2094208685d009e1
 Description: Suppress the "No SIM Card Installed" alert (SBSIMLockAlertItem) on iOS 3-6. Only the no-SIM alert is blocked; SIM PIN/PUK and other SIM alerts are shown as normal.
 Name: NoSIMAlert
 Author: kyej04u
+
+Package: com.huang.timeperiodstatusbar
+Version: 1.0.4
+Section: Tweaks
+Maintainer: Huang
+Depends: mobilesubstrate, firmware (>= 6.0), firmware (<< 7.0)
+Architecture: iphoneos-arm
+Filename: ./debs/com.huang.timeperiodstatusbar_1.0.4_iphoneos-arm.deb
+Size: 12416
+MD5sum: 06e9da627003c1acb77829d14a049c51
+Description: Show a finer time-of-day period in the iOS 6 status bar, like iPadOS 16+. Only active in 12-hour time, Chinese locale only; English AM/PM is left unchanged. DEBUG build: no longer links CydiaSubstrate (uses ObjC runtime swizzling instead, so it loads on old iOS 6 Substrate too); writes a log to /var/mobile/TimePeriodStatusBar.log, /tmp/TimePeriodStatusBar.log and /var/log/TimePeriodStatusBar.log.
+Depiction: https://kyej04u.github.io/repo/depictions/com.huang.timeperiodstatusbar/
+Name: TimePeriodStatusBar
+Author: Huang
