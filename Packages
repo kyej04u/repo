@@ -25,19 +25,19 @@ Description: Suppress the "No SIM Card Installed" alert (SBSIMLockAlertItem) on 
 Name: NoSIMAlert
 Author: kyej04u
 
-Package: com.huang.timeperiodstatusbar
-Version: 1.0.4
+Package: com.kyej04u.timeperiodstatusbar
+Version: 1.0.5
 Section: Tweaks
-Maintainer: Huang
+Maintainer: kyej04u
 Depends: mobilesubstrate, firmware (>= 6.0), firmware (<< 7.0)
 Architecture: iphoneos-arm
-Filename: ./debs/com.huang.timeperiodstatusbar_1.0.4_iphoneos-arm.deb
-Size: 12416
-MD5sum: 06e9da627003c1acb77829d14a049c51
-Description: Show a finer time-of-day period in the iOS 6 status bar, like iPadOS 16+. Only active in 12-hour time, Chinese locale only; English AM/PM is left unchanged. DEBUG build: no longer links CydiaSubstrate (uses ObjC runtime swizzling instead, so it loads on old iOS 6 Substrate too); writes a log to /var/mobile/TimePeriodStatusBar.log, /tmp/TimePeriodStatusBar.log and /var/log/TimePeriodStatusBar.log.
-Depiction: https://kyej04u.github.io/repo/depictions/com.huang.timeperiodstatusbar/
+Filename: ./debs/com.kyej04u.timeperiodstatusbar_1.0.5_iphoneos-arm.deb
+Size: 13462
+MD5sum: f4ae9966e26e64bbd5ac07bc63533bd5
+Description: Show a finer time-of-day period in the iOS 6 status bar, like iPadOS 16+. Only active in 12-hour time, Chinese locale only; English AM/PM is left unchanged. v1.0.5: also applies inside apps (injects into UIKit processes, not SpringBoard only). DEBUG build: no longer links CydiaSubstrate (uses ObjC runtime swizzling instead, so it loads on old iOS 6 Substrate too); writes a log to /var/mobile/TimePeriodStatusBar.log, /tmp/TimePeriodStatusBar.log and /var/log/TimePeriodStatusBar.log (detailed logs only in SpringBoard; other processes log one load line).
+Depiction: https://kyej04u.github.io/repo/depictions/com.kyej04u.timeperiodstatusbar/
 Name: TimePeriodStatusBar
-Author: Huang
+Author: kyej04u
 
 Package: com.kyej04u.appinstaller
 Version: 1.0.5
