@@ -9,9 +9,13 @@
 </style>
 <style>
 /* iOS 4-6 style nav bar + icons (overrides cytyle where needed) */
-body{margin:0;}
-.navbar{position:relative;height:44px;background:-webkit-gradient(linear,left top,left bottom,from(#8aa6cd),to(#4e73a7));background:linear-gradient(to bottom,#8aa6cd,#4e73a7);border-bottom:1px solid #2e4a6b;-webkit-box-shadow:0 1px 3px rgba(0,0,0,0.35);box-shadow:0 1px 3px rgba(0,0,0,0.35);text-align:center;}
-.navtitle{display:block;margin:0 65px;color:#fff;font-size:18px;font-weight:bold;line-height:44px;text-shadow:0 -1px 0 rgba(0,0,0,0.45);font-family:Helvetica,Arial,sans-serif;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:center;}
+/* cytyle hardcodes body{width:320px} and fieldset{max-width:302px}, which leaves
+   a pinstripe gap on wider screens - override so pages fill the screen like
+   iOS 4 Settings (full-width nav bar + grouped tables). */
+body{margin:0 auto !important;width:auto !important;max-width:568px !important;}
+panel>fieldset{max-width:none !important;}
+.navbar{position:relative;height:44px;background:-webkit-gradient(linear,left top,left bottom,from(#8aa6cd),to(#4e73a7));background:linear-gradient(to bottom,#8aa6cd,#4e73a7);border-bottom:1px solid #2e4a6b;-webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,0.25),0 1px 3px rgba(0,0,0,0.35);box-shadow:inset 0 1px 0 rgba(255,255,255,0.25),0 1px 3px rgba(0,0,0,0.35);text-align:center;}
+.navtitle{display:block;margin:0 60px;color:#fff;font-size:18px;font-weight:bold;line-height:44px;text-shadow:0 -1px 0 rgba(0,0,0,0.45);font-family:Helvetica,Arial,sans-serif;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:center;}
 .backbtn{position:absolute;left:12px;top:7px;height:30px;line-height:30px;padding:0 10px 0 8px;color:#fff;font-size:13px;font-weight:bold;text-decoration:none;text-shadow:0 -1px 0 rgba(0,0,0,0.45);font-family:Helvetica,Arial,sans-serif;background:-webkit-gradient(linear,left top,left bottom,from(#7ba1d4),to(#4a6da3));background:linear-gradient(to bottom,#7ba1d4,#4a6da3);border:1px solid #2c4a6e;-webkit-border-radius:5px;border-radius:5px;-webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,0.35),0 1px 1px rgba(0,0,0,0.3);box-shadow:inset 0 1px 0 rgba(255,255,255,0.35),0 1px 1px rgba(0,0,0,0.3);}
 .backbtn:before{content:"";position:absolute;top:7px;left:-7px;width:15px;height:15px;background:-webkit-gradient(linear,left top,left bottom,from(#6b96cc),to(#4a6da3));background:linear-gradient(to bottom,#6b96cc,#4a6da3);border-left:1px solid #2c4a6e;border-bottom:1px solid #2c4a6e;-webkit-transform:rotate(45deg);transform:rotate(45deg);}
 /* app icons: iOS rounded rect + thin shadow */
