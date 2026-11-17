@@ -1,27 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 <head>
-  <title>ky's repo</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <link rel="stylesheet" href="depictions/style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ky's repo</title>
+<style>
+body { font-family: -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif; margin: 0; padding: 16px; color: #222; background: #fff; word-wrap: break-word; overflow-wrap: break-word; }
+h1 { font-size: 20px; margin: 0 0 4px 0; }
+h1 img { width: 32px; height: 32px; vertical-align: -6px; margin-right: 6px; }
+.subtitle { color: #888; font-size: 13px; margin: 0 0 16px 0; }
+.add { display: inline-block; background: #007aff; color: #fff; text-decoration: none; padding: 8px 16px; border-radius: 6px; font-size: 15px; margin: 0 0 20px 0; }
+h2 { font-size: 15px; margin: 20px 0 6px 0; border-bottom: 1px solid #ddd; padding-bottom: 4px; }
+.pkg { margin: 0 0 16px 0; }
+.pkg h3 { font-size: 16px; margin: 0 0 2px 0; }
+.pkg h3 a { color: #007aff; text-decoration: none; }
+.pkg .version { color: #888; font-size: 13px; margin: 0 0 4px 0; }
+.pkg p { font-size: 15px; line-height: 1.6; margin: 0; }
+</style>
 </head>
 <body>
-
-<div class="container">
-	<h1><img src="CydiaIcon.png"> ky's cydia repo</h1>
+<h1><img src="CydiaIcon.png" alt=""> ky's cydia repo</h1>
+<p class="subtitle">https://kyej04u.github.io/repo/</p>
+<a class="add" href="cydia://url/https://cydia.saurik.com/api/share#?source=https://kyej04u.github.io/repo/">Add to Cydia</a>
+<h2>套件列表</h2>
+<div class="pkg">
+<h3><a href="depictions/com.kyej04u.pushalertsuppression/">PushAlertSuppression</a></h3>
+<p class="version">1.0.0 &middot; iOS 4&ndash;6</p>
+<p>隱藏 iPhone 未正確啟用造成的「連接 iTunes 以使用推播通知」提示。</p>
 </div>
-
-<div class="container">
-	<div class="card">
-		<div class="card-body">
-			<p><span class="text-primary"><b>Welcome to ky's repo</span></w.</p> <br>
-			<a class="btn btn-sm btn-primary" href="cydia://url/https://cydia.saurik.com/api/share#?source=https://kyej04u.github.io/repo/">Add to Cydia</a>
-		</div>
-	</div>
+<div class="pkg">
+<h3><a href="depictions/com.kyej04u.nosimalert/">NoSIMAlert</a></h3>
+<p class="version">1.0.0 &middot; iOS 3&ndash;6</p>
+<p>隱藏每次重啟都會跳出來的「尚未安裝 SIM 卡」提示。</p>
 </div>
-<p></p>
+<div class="pkg">
+<h3><a href="depictions/com.kyej04u.timeperiodstatusbar/">TimePeriodStatusBar</a></h3>
+<p class="version">1.0.6 &middot; iOS 6.0&ndash;6.1.x</p>
+<p>在 iOS 6 狀態列顯示更細的時段，像 iPadOS 16+ 一樣。只在 12 小時制、中文語系時啟用。</p>
+</div>
+<div class="pkg">
+<h3><a href="depictions/com.kyej04u.appinstaller/">APP Installer</a></h3>
+<p class="version">1.0.6 &middot; iOS 3&ndash;6</p>
+<p>在 iPhone 上直接安裝 IPA 檔案，點一下就能裝。內建檔案瀏覽器，也可以從 iFile 用「打開方式」開啟 IPA。</p>
+</div>
 </body>
 </html>
