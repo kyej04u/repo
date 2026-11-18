@@ -53,6 +53,7 @@ Description: Install unsigned .ipa files on iOS 3-6 with a tap. Browse for .ipa 
 Depiction: https://kyej04u.github.io/repo/depictions/com.kyej04u.appinstaller/
 Name: APP Installer
 Author: kyej04u
+
 Package: com.kyej04u.lumixposure
 Version: 1.0.55b1
 Section: Tweaks
