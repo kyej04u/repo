@@ -130,7 +130,7 @@ index_body = """    <panel>
                         <img class="appicon pkgicon" src="icons/lumixposure.png" width="59" height="59">
                         <div class="pkgtext">
                             LumiXposure (beta)<br>
-                            <span style="font-size: small">1.0.55b1 &middot; iOS 5&ndash;6</span><br>
+                            <span style="font-size: small">1.1b1 &middot; iOS 5&ndash;6</span><br>
                             iOS 5-6 內建相機底片模擬插件。
                         </div>
                     </div>
