@@ -69,15 +69,31 @@ Name: LumiXposure (beta)
 Author: kyej04u
 
 Package: com.kyej04u.ntpsyncd
-Version: 1.0.1
+Version: 1.0.4
 Section: Utilities
 Maintainer: kyej04u
 Depends: firmware (>= 3.0)
+Conflicts: com.kyej04u.ntpsync
 Architecture: iphoneos-arm
-Filename: ./debs/com.kyej04u.ntpsyncd_1.0.1_iphoneos-arm.deb
-Size: 4568
-MD5sum: fecebe2728fcc0bfb2810a98ac3a9b85
+Filename: ./debs/com.kyej04u.ntpsyncd_1.0.4_iphoneos-arm.deb
+Size: 4694
+MD5sum: c2fe9d6a25291d06b9d55ac994350021
 Description: Keep the system clock in sync via NTP automatically (no app). Runs on boot and every hour.
 Depiction: https://kyej04u.github.io/repo/depictions/com.kyej04u.ntpsyncd/
 Name: NTPSync Daemon
+Author: kyej04u
+
+Package: com.kyej04u.ntpsync
+Version: 1.0
+Section: Utilities
+Maintainer: kyej04u
+Depends: firmware (>= 3.0)
+Conflicts: com.kyej04u.ntpsyncd
+Architecture: iphoneos-arm
+Filename: ./debs/com.kyej04u.ntpsync_1.0_iphoneos-arm.deb
+Size: 11934
+MD5sum: 4d73edd70e288de772c1790f9da0a794
+Description: Sync the system clock from any NTP server (like NTPDate). Supports iOS 3-5.
+Depiction: https://kyej04u.github.io/repo/depictions/com.kyej04u.ntpsync/
+Name: NTPSync
 Author: kyej04u

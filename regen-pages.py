@@ -142,8 +142,20 @@ index_body = """    <panel>
                         <img class="appicon pkgicon" src="icons/tweak.png" width="59" height="59">
                         <div class="pkgtext">
                             NTPSync Daemon<br>
-                            <span style="font-size: small">1.0.1 &middot; iOS 3&ndash;5</span><br>
-                            修復 iOS 3-5 內建時間無法從網路同步。
+                            <span style="font-size: small">1.0.4 &middot; iOS 3&ndash;5</span><br>
+                            修復iOS 3-5內建時間無法從網路伺服器自動同步，每小時從time.apple.com等四個伺服器自動同步時間一次。
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="depictions/com.kyej04u.ntpsync/">
+                <div>
+                    <div>
+                        <img class="appicon pkgicon" src="icons/tweak.png" width="59" height="59">
+                        <div class="pkgtext">
+                            NTPSync<br>
+                            <span style="font-size: small">1.0 &middot; iOS 3&ndash;5</span><br>
+                            修復iOS 3-5內建時間無法從網路伺服器自動同步，透過此app可以手動查詢並更新時間。
                         </div>
                     </div>
                 </div>
@@ -228,8 +240,12 @@ pages["depictions/com.kyej04u.lumixposure/index.html"] = dep_page(
                 "1.0.55b1：初始發佈版本。"])])
 
 pages["depictions/com.kyej04u.ntpsyncd/index.html"] = dep_page(
-    "NTPSync Daemon", "Version 1.0.1 &middot; iOS 3&ndash;5 &middot; Utilities", "tweak.png",
-    [("說明", ["修復iOS 3-5內建時間無法從網路同步"])])
+    "NTPSync Daemon", "Version 1.0.4 &middot; iOS 3&ndash;5 &middot; Utilities", "tweak.png",
+    [("說明", ["修復iOS 3-5內建時間無法從網路伺服器自動同步，每小時從time.apple.com等四個伺服器自動同步時間一次"])])
+
+pages["depictions/com.kyej04u.ntpsync/index.html"] = dep_page(
+    "NTPSync", "Version 1.0 &middot; iOS 3&ndash;5 &middot; Utilities", "tweak.png",
+    [("說明", ["修復iOS 3-5內建時間無法從網路伺服器自動同步，透過此app可以手動查詢並更新時間"])])
 
 for rel, html in pages.items():
     p = os.path.join(BASE, rel)
