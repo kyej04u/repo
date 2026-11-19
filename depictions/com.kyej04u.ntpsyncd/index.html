@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <title>NTPSync Daemon</title>
+<style>
+@import url(https://cydia.saurik.com/cytyle/style-3163da6b7950852a03d31ea77735f4e1d2ba6699.css);
+@import url(http://cydia.saurik.com/cytyle/style-3163da6b7950852a03d31ea77735f4e1d2ba6699.css);
+</style>
+<style>
+/* iOS 4-6 style nav bar + icons (overrides cytyle where needed) */
+/* cytyle hardcodes body{width:320px} and fieldset{max-width:302px}, which leaves
+   a pinstripe gap on wider screens - override so pages fill the screen like
+   iOS 4 Settings (full-width nav bar + grouped tables). */
+html,body{overflow-x:hidden;}
+body{margin:0 auto !important;width:auto !important;max-width:568px !important;}
+panel>fieldset{max-width:none !important;}
+img{max-width:100%;}
+.navbar{position:relative;height:44px;background-image:url(../../icons/navbar-bg@2x.png);background-repeat:repeat-x;background-size:1px 44px;border-bottom:1px solid #2e4a6b;-webkit-box-shadow:0 1px 3px rgba(0,0,0,0.35);box-shadow:0 1px 3px rgba(0,0,0,0.35);text-align:center;}
+.navtitle{display:block;margin:0 60px;color:#fff;font-size:18px;font-weight:bold;line-height:44px;text-shadow:0 -1px 0 rgba(0,0,0,0.45);font-family:Helvetica,Arial,sans-serif;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:center;}
+.backbtn{position:absolute;left:8px;top:7px;height:30px;line-height:30px;padding:0 10px 0 18px;color:#fff;font-size:14px;font-weight:bold;text-decoration:none;text-shadow:0 -1px 0 rgba(0,0,0,0.45);font-family:Helvetica,Arial,sans-serif;background-image:url(../../icons/backbtn@2x.png);background-repeat:no-repeat;background-size:100% 100%;}
+/* app icons: iOS rounded rect + thin shadow. Icon files are solid full-bleed
+   squares now (no transparent/white corners), CSS only rounds the corners. */
+.appicon{-webkit-border-radius:10px;border-radius:10px;-webkit-box-shadow:0 1px 3px rgba(0,0,0,0.45);box-shadow:0 1px 3px rgba(0,0,0,0.45);}
+.pkgicon{float:left;width:59px;height:59px;margin:1px 10px 1px 0;}
+.depicon{float:left;width:64px;height:64px;margin:1px 12px 1px 0;}
+.deprow{min-height:64px;}
+.pkgtext{overflow:hidden;word-wrap:break-word;}
+.addicon{vertical-align:middle;width:40px;height:40px;margin-right:10px;-webkit-transform:scale(1.12);transform:scale(1.12);}
+.repoicon{float:left;width:64px;height:64px;margin:1px 12px 1px 0;}
+.reporow{min-height:64px;}
+.urlwrap{word-break:break-all;}
+</style>
+<script>if(/Cydia/i.test(navigator.userAgent))document.documentElement.className+=' cydia';</script>
+<style>.cydia .navbar{display:none!important}.cydia .dephead{display:none!important}</style>
+    <meta name="viewport" content="initial-scale=1.0,width=device-width">
+</head>
+<body class="pinstripe">
+    <div class="navbar"><a class="backbtn" href="../../">主頁</a><span class="navtitle">NTPSync Daemon</span></div>
+    <panel>
+        <fieldset class="dephead">
+            <div>
+                <div>
+                    <img class="appicon depicon" src="../../icons/tweak.png" width="64" height="64">
+                    <div class="pkgtext deprow">
+                        <strong>NTPSync Daemon</strong><br>
+                        <span style="font-size: small">Version 1.0.1 &middot; iOS 3&ndash;5 &middot; Utilities</span>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <label>說明</label>
+        <fieldset>
+            <div>
+                <div>
+                    修復iOS 3-5內建時間無法從網路同步
+                </div>
+            </div>
+        </fieldset>
+    </panel>
+</body></html>

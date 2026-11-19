@@ -136,6 +136,18 @@ index_body = """    <panel>
                     </div>
                 </div>
             </a>
+            <a href="depictions/com.kyej04u.ntpsyncd/">
+                <div>
+                    <div>
+                        <img class="appicon pkgicon" src="icons/tweak.png" width="59" height="59">
+                        <div class="pkgtext">
+                            NTPSync Daemon<br>
+                            <span style="font-size: small">1.0.1 &middot; iOS 3&ndash;5</span><br>
+                            修復 iOS 3-5 內建時間無法從網路同步。
+                        </div>
+                    </div>
+                </div>
+            </a>
         </fieldset>
     </panel>"""
 
@@ -214,6 +226,10 @@ pages["depictions/com.kyej04u.lumixposure/index.html"] = dep_page(
                 "iPhone / iPod touch only - iPad is not supported. iOS 5-6 only - other versions cannot install."]),
      ("版本紀錄", ["1.1b1：新增設定頁面，用戶可以自行選擇底片濃度、顆粒設定，A5以上設備改為採用CoreImage渲染以提升出圖速度。",
                 "1.0.55b1：初始發佈版本。"])])
+
+pages["depictions/com.kyej04u.ntpsyncd/index.html"] = dep_page(
+    "NTPSync Daemon", "Version 1.0.1 &middot; iOS 3&ndash;5 &middot; Utilities", "tweak.png",
+    [("說明", ["修復iOS 3-5內建時間無法從網路同步"])])
 
 for rel, html in pages.items():
     p = os.path.join(BASE, rel)
