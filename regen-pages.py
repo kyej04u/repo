@@ -130,7 +130,7 @@ index_body = """    <panel>
                         <img class="appicon pkgicon" src="icons/lumixposure.png" width="59" height="59">
                         <div class="pkgtext">
                             LumiXposure (beta)<br>
-                            <span style="font-size: small">1.1b1 &middot; iOS 5&ndash;6</span><br>
+                            <span style="font-size: small">1.2b10 &middot; iOS 5&ndash;6</span><br>
                             iOS 5-6 內建相機底片模擬插件。
                         </div>
                     </div>
@@ -231,12 +231,13 @@ pages["depictions/com.kyej04u.appinstaller/index.html"] = dep_page(
                 "安裝未簽名的 IPA 需要先裝對應版本的 AppSync；這個 App 本身不會跳過簽名驗證。"])])
 
 pages["depictions/com.kyej04u.lumixposure/index.html"] = dep_page(
-    "LumiXposure (beta)", "Version 1.1b1 &middot; iOS 5&ndash;6 &middot; Tweaks", "lumixposure.png",
+    "LumiXposure (beta)", "Version 1.2b10 &middot; iOS 5&ndash;6 &middot; Tweaks", "lumixposure.png",
     [("說明", ["iOS 5-6 內建相機底片模擬插件，目前只在 iPhone 4, 4s, 5，iOS 5.1.1, 6.1.3 上做過測試，請謹慎使用。",
                 "Film simulation plugin for the built-in Camera app on iOS 5-6. Currently tested only on iPhone 4, 4s, 5, iOS 5.1.1, 6.1.3. Please use with caution."]),
      ("限制", ["只支援 iPhone / iPod touch，iPad 不能安裝；只支援 iOS 5-6，其他版本不能安裝。",
                 "iPhone / iPod touch only - iPad is not supported. iOS 5-6 only - other versions cannot install."]),
-     ("版本紀錄", ["1.1b1：新增設定頁面，用戶可以自行選擇底片濃度、顆粒設定，A5以上設備改為採用CoreImage渲染以提升出圖速度。",
+     ("版本紀錄", ["1.2b10：修復鎖定介面相機快捷方式打開後沒有顯示底片按鈕的bug。",
+                "1.1b1：新增設定頁面，用戶可以自行選擇底片濃度、顆粒設定，A5以上設備改為採用CoreImage渲染以提升出圖速度。",
                 "1.0.55b1：初始發佈版本。"])])
 
 pages["depictions/com.kyej04u.ntpsyncd/index.html"] = dep_page(
